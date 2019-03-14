@@ -173,7 +173,7 @@ public class AuthorityConfigActivity extends BaseActivity {
         context = AuthorityConfigActivity.this;
         commerceId = MySpEdit.getInstance().getCommerceId();
         Loger.e("---commerceId--" + commerceId);
-
+// git
         tvTitle.setText(getResources().getString(R.string.authority_config));
         arrayConfigTarget = getResources().getStringArray(R.array.config_target);
         initViewEvent();
