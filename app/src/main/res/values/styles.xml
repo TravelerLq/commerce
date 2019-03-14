@@ -1,0 +1,488 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Customize your theme here.
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="actionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/primary_text_light</item>
+        <item name="actionBarSize">@dimen/actionBarSize</item>
+    </style>
+
+    <style name="customTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionBarTheme">@style/actionBarTheme</item>
+        <item name="colorPrimary">#FFA500</item>
+        <item name="actionBarSize">@dimen/actionBarSize</item>
+        <item name="colorPrimaryDark">#CCa500</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="big_text_style">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="middle_text_style">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="small_text_style">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="smaller_text_style">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <style name="white_big_style" parent="@style/big_text_style">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="white_middle_style" parent="@style/middle_text_style">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="white_small_style" parent="@style/small_text_style">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="gray_noraml_small_style" parent="@style/small_text_style">
+        <item name="android:textColor">@color/hint_gray</item>
+    </style>
+
+
+    <style name="black_middle_style" parent="@style/white_middle_style">
+        <item name="android:textColor">@color/black_333333</item>
+    </style>
+
+    <style name="black_small_style" parent="@style/white_small_style">
+        <item name="android:textColor">@color/black_333333</item>
+    </style>
+
+
+    <style name="btn_sure" parent="white_big_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_50</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/logint_btn_xml</item>
+        <item name="android:layout_margin">@dimen/dimen_10</item>
+        <item name="android:text">确定</item>
+    </style>
+
+    <style name="BottomDialog" parent="Theme.AppCompat.Light.Dialog">
+        <!--背景颜色及透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+
+    <style name="spinner" parent="@style/black_middle_style">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dimen_2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dimen_5</item>
+        <item name="android:layout_marginRight">@dimen/dimen_15</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+        <item name="android:dropDownHorizontalOffset">@dimen/dimen_20</item>
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+    <!--home 圆的色块-->
+    <style name="home_round" parent="@style/black_middle_style">
+
+        <item name="android:layout_width">@dimen/dimen_77</item>
+        <item name="android:layout_height">@dimen/dimen_60</item>
+        <item name="android:layout_centerInParent">true</item>
+
+        <item name="android:contentDescription">@string/todo</item>
+
+    </style>
+
+
+    <style name="home_round_small" parent="@style/black_middle_style">
+
+        <item name="android:layout_width">@dimen/dimen_60</item>
+        <item name="android:layout_height">@dimen/dimen_40</item>
+        <item name="android:layout_centerInParent">true</item>
+
+    </style>
+
+    <!--home 圆的色块下的文字-->
+    <style name="home_round_title" parent="@style/black_small_style">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_1</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+
+
+    <!--预算管理-按部门划分- linearlyout style-->
+    <style name="budget_depart_ll_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_60</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/dimen_20</item>
+    </style>
+
+
+    <style name="contract_add_linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/dimen_60</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/bg_red_rectangle</item>
+        <item name="android:layout_marginTop">@dimen/dimen_20</item>
+    </style>
+
+    <style name="contract_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_weight">150</item>
+        <item name="android:paddingLeft">@dimen/dimen_10</item>
+    </style>
+
+    <style name="contract_txt_content_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">100</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_weight">445</item>
+        <item name="android:paddingLeft">@dimen/dimen_10</item>
+        <item name="android:drawableRight">@drawable/ic_arrow_down</item>
+        <item name="android:paddingRight">@dimen/dimen_20</item>
+    </style>
+
+    <style name="contract_edt_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">100</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_weight">445</item>
+        <item name="android:paddingLeft">@dimen/dimen_10</item>
+        <item name="android:paddingRight">@dimen/dimen_20</item>
+    </style>
+
+    <!--billing 远程开票－新增开票信息-->
+
+    <style name="billing_new_linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/dimen_40</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/dimen_20</item>
+    </style>
+
+    <style name="billing_new_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/dimen_10</item>
+    </style>
+
+    <style name="cert_apply_image">
+        <item name="android:layout_width">@dimen/apply_cert_image_height</item>
+        <item name="android:layout_height">@dimen/apply_cert_image_height</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+        <item name="android:scaleType">fitXY</item>
+
+    </style>
+
+
+    <style name="reim_home_my_rl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/reim_home_item</item>
+        <item name="android:layout_marginTop">@dimen/dimen_27</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/bg_regtangle_white_xml</item>
+
+    </style>
+
+    <style name="reim_home_my_iv">
+        <item name="android:layout_width">@dimen/reim_home_item</item>
+        <item name="android:layout_height">@dimen/reim_home_item</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/bg_regtangle_company_item</item>
+
+    </style>
+
+    <style name="enterprise_home_item_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/enterprise_item_height</item>
+        <item name="android:background">@drawable/bg_regtangle_white_xml</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+
+
+    <style name="enterprise_home_iv">
+        <item name="android:layout_width">@dimen/enterprise_item_height</item>
+        <item name="android:layout_height">@dimen/enterprise_item_height</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/bg_regtangle_grey_5151</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/dimen_15</item>
+        <item name="android:padding">@dimen/dimen_14</item>
+        <item name="android:layout_gravity">center_vertical</item>
+
+    </style>
+
+    <style name="department_iv_style">
+        <item name="android:layout_width">@dimen/department_item_height</item>
+        <item name="android:layout_height">@dimen/department_item_height</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/bg_regtangle_company_item</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/dimen_15</item>
+        <item name="android:padding">@dimen/dimen_14</item>
+        <item name="android:layout_gravity">center_vertical</item>
+
+    </style>
+
+    <!--我的- linearlayout style-->
+    <style name="user_info_ll_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/user_info_linear_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@drawable/bg_regtangle_white_xml</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/dimen_10</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_15</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10</item>
+        <item name="android:layout_marginRight">@dimen/dimen_10</item>
+    </style>
+
+    <style name="reim_add_iv_style">
+        <item name="android:layout_width">@dimen/enterprise_item_height</item>
+        <item name="android:layout_height">@dimen/enterprise_item_height</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/bg_regtangle_grey</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_8</item>
+        <item name="android:layout_marginRight">@dimen/dimen_15</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+
+        <item name="android:layout_gravity">center_vertical</item>
+
+    </style>
+
+    <!--enterprise -home -textview -style-->
+    <style name="enterprise_home_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+
+    </style>
+
+
+    <!--register的imageView-->
+
+    <style name="register_imageview_style">
+        <item name="android:layout_width">@dimen/dimen_18</item>
+        <item name="android:layout_height">@dimen/dimen_18</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+
+    <!--register的editText-->
+
+    <style name="register_edt_style" parent="middle_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_15</item>
+        <item name="android:paddingRight">@dimen/dimen_10</item>
+        <item name="android:minLines">1</item>
+
+
+    </style>
+
+    <!--enterprise info update textview style-->
+
+
+    <!--申请证书 edittext-->
+    <style name="apply_cert_edit_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/dimen_10</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+
+
+    <!--我的- imageview style-->
+
+    <style name="user_info_iv_style">
+        <item name="android:layout_width">@dimen/user_info_image_size</item>
+        <item name="android:layout_height">@dimen/user_info_image_size</item>
+        <item name="android:layout_marginRight">@dimen/dimen_13</item>
+        <item name="android:padding">@dimen/dimen_5</item>
+    </style>
+
+    <!--问题反馈的textview style-->
+    <style name="feedback_textview_style" parent="@style/white_middle_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dimen_10</item>
+        <item name="android:paddingBottom">@dimen/dimen_10</item>
+        <item name="android:textColor">@color/black_333333</item>
+
+    </style>
+
+
+    <style name="myTransparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <!--审批中 item-->
+    <style name="reim_aproval_ll_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dimen_15</item>
+    </style>
+
+
+    <!--商会通 style-->
+
+    <style name="authority_rl_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_17</item>
+        <item name="android:background">@drawable/bg_tab_rectangle</item>
+        <item name="android:paddingLeft">@dimen/dimen_7</item>
+        <item name="android:paddingRight">@dimen/dimen_8</item>
+        <item name="android:paddingTop">@dimen/dimen_10</item>
+    </style>
+
+    <!--商会通 grid style-->
+    <style name="authority_grid_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:horizontalSpacing">@dimen/dimen_3</item>
+        <item name="android:verticalSpacing">@dimen/dimen_5</item>
+        <item name="android:stretchMode">columnWidth</item>
+    </style>
+
+    <!--商会通 选中imagview style-->
+    <style name="authority_image_select">
+        <item name="android:layout_width">@dimen/dimen_10</item>
+        <item name="android:layout_height">@dimen/dimen_10</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5</item>
+        <item name="android:layout_marginRight">@dimen/dimen_5</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:src">@drawable/ic_unselect</item>
+    </style>
+    <!--商会通 分类标题 textview style-->
+    <style name="authority_textview_title" parent="middle_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_5</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_3</item>
+
+    </style>
+
+    <!--商会通 公司信息修改 其他项  parent-->
+    <style name="other_modify_parent" parent="middle_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_45</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_5</item>
+
+
+    </style>
+
+    <!--商会通 公司信息修改 其他项 textview-->
+    <style name="other_modify_textview" parent="middle_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5</item>
+
+
+    </style>
+    <!--商会通 公司信息修改 其他项edttext-->
+    <style name="other_modify_edt" parent="middle_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.5</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5</item>
+
+
+    </style>
+
+    <!--琢税鸟相关-->
+
+    <style name="ll_pecker_exam">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_35</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/dimen_7</item>
+        <item name="android:paddingRight">@dimen/dimen_7</item>
+        <item name="android:layout_marginTop">@dimen/dimen_17</item>
+
+
+    </style>
+
+
+
+
+    <style name="fl_analyze">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_20</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_30</item>
+        <item name="android:layout_marginRight">@dimen/dimen_30</item>
+        >
+    </style>
+
+
+
+</resources>

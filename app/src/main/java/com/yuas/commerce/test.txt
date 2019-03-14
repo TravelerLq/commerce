@@ -1,0 +1,75 @@
+ java 多态
+
+ 实现：extends  implement
+
+   A -->B  B--->C B -->D
+
+class A {
+    public String show(D obj){              //方法一
+        return ("A and D");
+    }
+    public String show(A obj){              //方法二
+        return ("A and A");
+    }
+}
+class B extends A{
+    public String show(B obj){              //方法三
+        return ("B and B");
+    }
+    public String show(A obj){              //方法四
+        return ("B and A");
+    }
+}
+class C extends B{
+}
+class D extends
+B{
+}
+public class Test1 {
+    public static void main(String[] args) {
+        A a1 = new A();
+        A a2 = new B();
+        B b = new B();
+        C c = new C();
+        D d = new D();
+        System.out.println("1--" + a1.show(b));
+        System.out.println("2--" + a1.show(c));
+        System.out.println("3--" + a1.show(d));
+        System.out.println("4--" + a2.show(b));
+        System.out.println("5--" + a2.show(c));
+        System.out.println("6--" + a2.show(d));
+        System.out.println("7--" + b.show(b));
+        System.out.println("8--" + b.show(c));
+        System.out.println("9--" + b.show(d));
+    }
+}
+
+
+A a2 =new B() ; 涉及到多态，B实现了向上转型，创建了一个fulei引用指向子类对象，这样弗雷引用可以随时争相任意子类对象，提高扩展性；
+但是不能调用子类有而父类没有的方法。法四重写了方二，所以 a2调用2、4；
+
+1--A and A
+2--A and A
+3--A and D
+4--B and A
+5--B and A
+6--A and D
+7--B and B
+8--B and B
+9--A and D
+
+
+String ,Stringbuffer Stringbuilder
+
+String  final  size not chnage，new object
+1。StringBuffer  itself do ; Stringbuffer  经常要改变的情况下，则使用StringBuffer
+StringBUilder 5。0新增，此类提供了一个御Strinuffer api 不同步  比较快 single thread can use it
+String builder .append (s)实现字符串拼接 但是因为线程不安全，且仅仅获得10 percent tisheng ,suoyi  buqueidng的时偶 用StringUBU方法二
+不可改变，引用类型的变量的不可指向其他
+String设计成不变的why？
+不可变对象是指对象内的成员变量、基本数据类型的值
+1。
+
+
+
+

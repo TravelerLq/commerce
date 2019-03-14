@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_60"
+    android:layout_height="@dimen/dimen_60"
+    android:id="@+id/rl_item_parent"
+    android:background="@drawable/dotted_line_rectangle">
+
+    <ImageView
+        android:id="@+id/iv_selection"
+        android:layout_width="@dimen/dimen_10"
+        android:layout_height="@dimen/dimen_10"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:src="@drawable/ic_unselect" />
+
+
+    <ImageView
+        android:id="@+id/iv_authority_icon"
+        android:layout_width="@dimen/dimen_25"
+        android:layout_height="@dimen/dimen_25"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:src="@drawable/ic_excellent" />
+
+    <TextView
+        android:id="@+id/tv_authority_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/dimen_2"
+        android:layout_centerHorizontal="true"
+        android:text="学习"
+        android:layout_below="@+id/iv_authority_icon"
+        android:textSize="10sp"/>
+
+
+</RelativeLayout>

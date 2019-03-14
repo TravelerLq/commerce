@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f0f0f3">
+
+    <include
+        android:id="@+id/includeTitleLayout"
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48" />
+
+    <TextView
+        android:id="@+id/tv_sure"
+        style="@style/btn_sure"
+        android:layout_alignParentBottom="true"
+        android:text="@string/sure" />
+
+    <!--<item name="android:background">@drawable/bg_tab_rectangle</item>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_sure"
+        android:layout_below="@id/includeTitleLayout"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_20"
+            android:paddingLeft="@dimen/dimen_18"
+            android:paddingRight="@dimen/dimen_18"
+            android:paddingTop="@dimen/dimen_15">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/company_introduce" />
+
+            <EditText
+                android:id="@+id/edt_company_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_88"
+                android:layout_marginTop="@dimen/dimen_5"
+               android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="照片："
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_add_pic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@color/grey_f7f7f8"
+                android:drawableLeft="@drawable/ic_add"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_100"
+                android:paddingRight="@dimen/dimen_100"
+                android:text="@string/add_pic" />
+
+            <ImageView
+                android:id="@+id/img_pic"
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_80"
+                android:layout_gravity="center"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_add_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@color/grey_f7f7f8"
+                android:drawableLeft="@drawable/ic_add"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_100"
+                android:paddingRight="@dimen/dimen_100"
+                android:text="@string/add_vedio" />
+
+            <FrameLayout
+                android:id="@+id/frame_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_105"
+                android:layout_marginTop="@dimen/dimen_10">
+
+                <ImageView
+                    android:id="@+id/img_video_thumbnail"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/img_default" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_35"
+                    android:layout_height="@dimen/dimen_35"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_video_player" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="@string/company_website" />
+
+            <EditText
+                android:id="@+id/edt_company_website"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:layout_marginTop="@dimen/dimen_5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="@string/company_product" />
+
+            <EditText
+                android:id="@+id/edt_company_product"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_85"
+                android:layout_marginTop="@dimen/dimen_5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="@string/contact" />
+
+            <EditText
+
+                android:id="@+id/edt_contact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:layout_marginTop="@dimen/dimen_5" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="@string/contact_way" />
+
+            <EditText
+                android:id="@+id/edt_contact_way"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:layout_marginTop="@dimen/dimen_5" />
+
+            <TextView
+                android:id="@+id/tv_other_modify"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/bg_regtangle_white_xml"
+                android:drawableRight="@drawable/ic_more"
+                android:gravity="center"
+                android:paddingRight="@dimen/dimen_20"
+                android:text="@string/other_modify" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

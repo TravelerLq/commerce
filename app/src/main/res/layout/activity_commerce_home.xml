@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bnb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/includeTitleLayout"
+        layout="@layout/activity_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:id="@+id/search_edit_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_56"
+        android:layout_below="@+id/includeTitleLayout"
+        ></FrameLayout>
+
+    <!--android:background="#f2f2f2"-->
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_58"
+        android:layout_alignParentBottom="true"
+        android:background="#f2f2f2"
+        android:orientation="horizontal">
+
+        <com.yuas.commerce.view.BottomNavigationItem
+            android:id="@+id/bni0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            bnb:color="@color/red_b91d26"
+            bnb:src="@drawable/ic_commerce_earth"
+            bnb:textSize="12sp"
+            bnb:text="@string/commerce" />
+
+        <com.yuas.commerce.view.BottomNavigationItem
+            android:id="@+id/bni1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            bnb:color="@color/red_b91d26"
+            bnb:src="@drawable/ic_commerce_manage"
+            bnb:textSize="12sp"
+            bnb:text="@string/commerce_manage" />
+
+        <com.yuas.commerce.view.BottomNavigationItem
+            android:id="@+id/bni2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            bnb:color="@color/red_b91d26"
+            bnb:src="@drawable/ic_msg"
+            bnb:text="消息" />
+
+        <com.yuas.commerce.view.BottomNavigationItem
+            android:id="@+id/bni3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            bnb:color="@color/red_b91d26"
+            bnb:src="@drawable/ic_cai"
+            bnb:text="@string/commerce" />
+    </LinearLayout>
+</RelativeLayout>

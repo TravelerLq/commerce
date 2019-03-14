@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f0f0f3"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title"></include>
+
+    <TextView
+        android:id="@+id/tv_config_target"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_margin="@dimen/dimen_10"
+        android:background="@drawable/bg_regtangle_white_xml"
+        android:drawableRight="@drawable/ic_drop_select"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_7"
+        android:paddingRight="@dimen/dimen_10"
+        android:text="@string/authority_target"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_go_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_margin="@dimen/dimen_10"
+        android:background="@drawable/bg_regtangle_white_xml"
+        android:drawablePadding="@dimen/dimen_10"
+        android:drawableRight="@drawable/ic_search"
+        android:paddingRight="@dimen/dimen_10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_7"
+        android:text="@string/name_select"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv_select_positon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_margin="@dimen/dimen_10"
+        android:background="@drawable/bg_regtangle_white_xml"
+        android:drawableRight="@drawable/ic_drop_select"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_7"
+        android:paddingRight="@dimen/dimen_10"
+        android:text="@string/select_position"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_7"
+            android:paddingRight="@dimen/dimen_8"
+            android:paddingTop="@dimen/dimen_12">
+
+            <!--轮播-->
+            <RelativeLayout
+                android:id="@+id/rl_authority_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_85"
+                android:background="@drawable/bg_tab_rectangle">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_45"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/authority_carousel"
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:id="@+id/iv_carousel_select"
+                    android:layout_width="@dimen/dimen_10"
+                    android:layout_height="@dimen/dimen_10"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:src="@drawable/ic_unselect" />
+            </RelativeLayout>
+
+            <!--优秀企业展&热点新闻-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--企业-->
+                <RelativeLayout
+                    android:id="@+id/rl_corporation"
+                    style="@style/authority_rl_style"
+                    android:layout_weight="322">
+
+                    <TextView
+                        android:id="@+id/tv_excellent_corporation"
+                        style="@style/authority_textview_title"
+                        android:text="@string/corporation_exhabition" />
+
+                    <ImageView
+                        android:id="@+id/iv_select_coporation"
+                        style="@style/authority_image_select" />
+
+                    <com.yuas.commerce.view.ScrollGridView
+                        android:id="@+id/grid_corporation"
+                        style="@style/authority_grid_style"
+                        android:layout_below="@+id/tv_excellent_corporation"
+                        android:numColumns="2">
+
+                    </com.yuas.commerce.view.ScrollGridView>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="22" />
+                <!--新闻-->
+                <RelativeLayout
+                    android:id="@+id/rl_news"
+                    style="@style/authority_rl_style"
+                    android:layout_weight="322">
+
+                    <TextView
+                        android:id="@+id/tv_news"
+                        style="@style/authority_textview_title"
+                        android:text="@string/news" />
+
+                    <ImageView
+                        android:id="@+id/iv_select_news"
+                        style="@style/authority_image_select" />
+
+                    <com.yuas.commerce.view.ScrollGridView
+                        android:id="@+id/grid_news"
+                        style="@style/authority_grid_style"
+                        android:layout_below="@+id/tv_news"
+                        android:numColumns="2">
+
+                    </com.yuas.commerce.view.ScrollGridView>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!--互动学习learn each-->
+            <RelativeLayout
+                android:id="@+id/rl_learn"
+                style="@style/authority_rl_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dimen_170">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/authority_textview_title"
+                    android:text="@string/learn_each" />
+
+                <ImageView
+                    android:id="@+id/iv_select_learning"
+                    style="@style/authority_image_select" />
+
+                <com.yuas.commerce.view.ScrollGridView
+                    android:id="@+id/grid_learning"
+                    style="@style/authority_grid_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:minHeight="@dimen/dimen_170"
+                    android:numColumns="5"></com.yuas.commerce.view.ScrollGridView>
+            </RelativeLayout>
+
+
+            <!--商会介绍-->
+            <RelativeLayout
+                android:id="@+id/rl_introduce"
+                style="@style/authority_rl_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dimen_105">
+
+                <TextView
+                    android:id="@+id/tv_introduce"
+                    style="@style/authority_textview_title"
+                    android:text="@string/commerce_introduce" />
+
+                <ImageView
+                    android:id="@+id/iv_select_introduce"
+                    style="@style/authority_image_select" />
+
+                <com.yuas.commerce.view.ScrollGridView
+                    android:id="@+id/grid_introducing"
+                    style="@style/authority_grid_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_introduce"
+                    android:numColumns="5"></com.yuas.commerce.view.ScrollGridView>
+            </RelativeLayout>
+
+            <!--投资中心-->
+            <RelativeLayout
+                android:id="@+id/rl_invest"
+                style="@style/authority_rl_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dimen_170">
+
+                <TextView
+                    android:id="@+id/tv_invest_center"
+                    style="@style/authority_textview_title"
+                    android:text="@string/invest_center" />
+
+                <ImageView
+                    android:id="@+id/iv_select_invest"
+                    style="@style/authority_image_select" />
+
+                <com.yuas.commerce.view.ScrollGridView
+                    android:id="@+id/grid_invest"
+                    style="@style/authority_grid_style"
+                    android:layout_below="@+id/tv_invest_center"
+                    android:minHeight="@dimen/dimen_170"
+                    android:numColumns="5"></com.yuas.commerce.view.ScrollGridView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btn_sure"
+                style="@style/btn_sure"
+                android:layout_marginBottom="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/dimen_26"
+                android:background="@drawable/btn_red" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

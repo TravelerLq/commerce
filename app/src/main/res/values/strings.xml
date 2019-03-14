@@ -1,0 +1,526 @@
+<resources>
+    <!--<string name="app_name">财商道</string>-->
+    <string name="login">登录</string>
+
+    <string name="socket_exception">服务器连接出错</string>
+    <string name="socket_timeout_exception">服务器连接超时</string>
+    <string name="unknown_host_exception">无法连接到服务器</string>
+
+    <!--<string-array name="all_status">　　-->
+        <!--<item>执行</item>　　-->
+        <!--<item>未执行</item>　　-->
+    <!--</string-array>-->
+    <string name="sure">确定</string>
+
+    <string name="notice">提示</string>
+    <string name="cancel">取消</string>
+    <!--<string name="save">保存</string>-->
+    <!--<string name="hint_input_code">请输入邀请码</string>-->
+    <!--<string name="pass">通过</string>-->
+    <!--<string name="modify_pwd">修改密码</string>-->
+    <!--<string name="please_input_old_pwd">请输入原始密码</string>-->
+    <!--<string name="please_input_new_pwd">请输入新密码</string>-->
+    <!--<string name="please_input_new_pwd_again">请再次输入新密码</string>-->
+    <!--<string name="input_old_pwd">输入原始密码</string>-->
+    <!--<string name="input_new_pwd">输入新密码</string>-->
+    <!--<string name="input_new_pwd_again">再次输入新密码</string>-->
+    <!--<string name="my_feed_back">我的反馈</string>-->
+    <!--<string name="me_feed_back">我要反馈</string>-->
+    <!--<string name="input_feed_back_msg">请在输入反馈内容。。。</string>-->
+    <!--<string name="submit">提交</string>-->
+    <!--<string name="pwd_not_same">新密码不一致，请重新输入</string>-->
+    <!--<string name="update_pwd_success">密码修改成功，请重新登录</string>-->
+
+    <string name="str_register"><Data><![CDATA[还没有帐号？<font color="#ff0000">%3$s</font>]]></Data></string>
+    <!--<string name="agreement">已阅读并同意注册协议</string>-->
+    <string name="login_out">退出登录</string>
+    <!--<string name="str_agree"><Data><![CDATA[我已阅读，并同意<font color="#ff0000">%3$s</font>]]></Data></string>-->
+    <!--<string name="agree_title">用户注册协议</string>-->
+    <!--<string name="agree_content">一、服务条款的确认及接受\n-->
+<!--1、财商道客户端软件（以下称“本软件”）各项电子服务的所有权和运作权归属于“财商道”所有，本软件提供的服务将完全按照其发布的服务条款和操作规则严格执行。您确认所有服务条款并完成注册程序时，本协议在您与本软件间成立并发生法律效力，同时您成为本软件正式用户。\n-->
+<!--2、根据国家法律法规变化及本软件运营需要，京东有权对本协议条款及相关规则不时地进行修改，修改后的内容一旦以任何形式公布在本软件上即生效，并取代此前相关内容，您应不时关注本软件公告、提示信息及协议、规则等相关内容的变动。您知悉并确认，如您不同意更新后的内容，应立即停止使用本软件；如您继续使用本软件，即视为知悉变动内容并同意接受。\n-->
+
+<!--二、服务需知\n-->
+<!--1、本软件运用自身开发的操作系统通过国际互联网络为用户提供购买商品等服务。使用本软件，您必须：\n-->
+<!--(1)自行配备上网的所需设备，包括个人手机、平板电脑、调制解调器、路由器等；\n-->
+<!--(2)自行负担个人上网所支付的与此服务有关的电话费用、网络费用等；\n-->
+<!--(3)选择与所安装终端设备相匹配的软件版本，包括但不限于iOS、Android、iPad、Windows Phone等发布的应用版本。\n-->
+
+<!--2、基于本软件所提供的网络服务的重要性，您确认并同意：\n-->
+<!--(1)提供的注册资料真实、准确、完整、合法有效，注册资料如有变动的，应及时更新；\n-->
+<!--(2)如果您提供的注册资料不合法、不真实、不准确、不详尽的，您需承担因此引起的相应责任及后果，并且保留终止您使用本软件各项服务的权利。\n-->
+
+<!--三、订单\n-->
+<!--1、使用本软件下订单，您应具备购买相关商品的权利能力和行为能力，如果您在18周岁以下，您需要在父母或监护人的监护参与下才能使用本软件。在下订单的同时，即视为您满足上述条件，并对您在订单中提供的所有信息的真实性负责。-->
+<!--2、在您下订单时，请您仔细确认所购商品的名称、价格、数量、型号、规格、尺寸、联系地址、电话、收货人等信息。收货人与您本人不一致的，收货人的行为和意思表示视为您的行为和意思表示，您应对收货人的行为及意思表示的法律后果承担连带责任。-->
+<!--3、您理解并同意：本软件上销售商展示的商品和价格等信息仅仅是要约邀请，您下单时须填写您希望购买的商品数量、价款及支付方式、收货人、联系方式、收货地址（合同履行地点）、合同履行方式等内容；系统生成的订单信息是计算机信息系统根据您填写的内容自动生成的数据，仅是您向销售商发出的合同要约；销售商收到您的订单信息后，只有在销售商将您在订单中订购的商品从仓库实际直接向您发出时（以商品出库为标志），方视为您与销售商之间就实际直接向您发出的商品建立了合同关系；如果您在一份订单里订购了多种商品并且销售商只给您发出了部分商品时，您与销售商之间仅就实际直接向您发出的商品建立了合同关系；只有在销售商实际直接向您发出了订单中订购的其他商品时，您和销售商之间就订单中其他已实际直接向您发出的商品才成立合同关系。对于电子书、数字音乐、在线手机充值等数字化商品，您下单并支付货款后合同即成立。-->
+<!--4、尽管销售商做出最大的努力，但由于市场变化及各种以合理商业努力难以控制因素的影响，本软件无法避免您提交的订单信息中的商品出现缺货情况；如您下单所购买的商品发生缺货，您有权取消订单，销售商亦有权自行取消订单，若您已经付款，则为您办理退款。</string>-->
+
+   <!--&lt;!&ndash;about pecker&ndash;&gt;-->
+
+    <!--<string name="about_pecker_content">啄税鸟APP—一企业财税机器人管家\n  产品的核心理念：发票电子入账。\n 与纸质发票记账相比，具有如下优点:\n-->
+<!--1、流程简单，使用快捷，移动审批；\n-->
+<!--2、票据储存云端，自动生成凭证；\n-->
+<!--3、不可篡改的记录业务发生过程；\n-->
+<!--4、纳税风险预警。\n-->
+
+<!--组成财税机器人的各大系统:\n-->
+<!--1、企业员工身份识别系统\n-->
+<!--2、票据采集及报销系统\n-->
+<!--3、发票池管理系统\n-->
+<!--4、凭证生成系统\n-->
+    <!--5、电子合同管理系统\n-->
+    <!--6、预申报及风险体检系统\n-->
+    <!--7、纳税评估系统\n-->
+    <!--8、预警系统\n-->
+    <!--9、手机移动开票系统\n-->
+
+    <!--</string>-->
+
+    <string name="home_title">主页</string>
+    <!--<string name="reim_tile">云智税</string>-->
+
+    <!--<string-array name="approval_no">　-->
+        <!--<item>1</item>　-->
+        <!--<item>2</item>　　-->
+        <!--<item>3</item>　　-->
+        <!--<item>4</item>-->
+        <!--<item>5</item>-->
+    <!--</string-array>-->
+    <!--&lt;!&ndash;（销售 采购 劳动用工（没有公司客户基本信息））、&ndash;&gt;-->
+    <!--<string-array name="sex">　-->
+        <!--<item>男</item>　-->
+        <!--<item>女</item>　　-->
+
+    <!--</string-array>-->
+
+    <!--&lt;!&ndash;合同类型&ndash;&gt;-->
+    <!--<string-array name="contract_type">　-->
+        <!--<item>销售合同</item>　-->
+        <!--<item>采购合同</item>　　-->
+        <!--<item>劳动用工合同</item>　　-->
+    <!--</string-array>-->
+    <!--&lt;!&ndash;发票类型（4类 不开票、专票、普票、电子票）、&ndash;&gt;-->
+    <!--<string-array name="invoicing_type">　-->
+        <!--<item>不开票</item>　-->
+        <!--<item>专票</item>　　-->
+        <!--<item>普票</item>　　-->
+        <!--<item>电子票</item>　　-->
+    <!--</string-array>-->
+    <!--&lt;!&ndash;付款方式（现金、银行转账），&ndash;&gt;-->
+    <!--<string-array name="pay_way">　-->
+        <!--<item>现金支付</item>　-->
+        <!--<item>银行转账支付</item>　　-->
+    <!--</string-array>-->
+
+
+    <!--<string-array name="company_type">　-->
+        <!--<item>&#45;&#45;请选择&#45;&#45;</item>-->
+        <!--<item>国有企业</item>　-->
+        <!--<item>集体企业</item>　　-->
+        <!--<item>联营企业</item>　　-->
+        <!--<item>股份合作制企业</item>　-->
+        <!--<item>私营企业</item>　-->
+        <!--<item>个体户</item>　　-->
+        <!--<item>合伙企业</item>　　-->
+        <!--<item>有限责任公司</item>　-->
+        <!--<item>股份有限公司</item>　　-->
+        <!--<item>个人独资企业</item>　　-->
+        <!--<item>外商投资企业</item>-->
+        <!--　-->
+    <!--</string-array>-->
+
+    <!--&lt;!&ndash;增值税征收方式（），&ndash;&gt;-->
+    <!--<string-array name="vat_way">　-->
+        <!--<item>小规模纳税人</item>　-->
+        <!--<item>一般纳税人</item>　　-->
+    <!--</string-array>-->
+
+    <!--&lt;!&ndash;所得税征收方式（），&ndash;&gt;-->
+    <!--<string-array name="income_tax_way">　-->
+        <!--<item>查账征收</item>　-->
+        <!--<item>核定征收</item>　　-->
+    <!--</string-array>-->
+
+    <!--&lt;!&ndash;行业分类（），&ndash;&gt;-->
+    <!--<string-array name="fields_type">　-->
+        <!--<item>农、林、牧、渔业</item>　-->
+        <!--<item>采矿业</item>-->
+        <!--<item>制造业</item>　-->
+        <!--<item>电力、燃气及水的生产和供应</item>　　-->
+        <!--<item>建筑业</item>　-->
+        <!--<item>交通运输、仓储和邮政</item>-->
+        <!--<item>信息传输、计算机服务和软件业</item>　-->
+        <!--<item>批发和零售</item>　　-->
+        <!--<item>住宿和餐饮业</item>　-->
+        <!--<item>金融业</item>-->
+        <!--<item>房地产业</item>　-->
+        <!--<item>租赁和商务服务</item>　　-->
+        <!--<item>科学研究、技术服务和地质勘查</item>　-->
+        <!--<item>水利、环境和公共设施管理</item>-->
+        <!--<item>居民服务和其他服务</item>　-->
+        <!--<item>教育</item>　　-->
+        <!--<item>卫生、社会保障和社会福利</item>　-->
+        <!--<item>文化、体育和娱乐业</item>-->
+        <!--<item>公共管理和社会组织</item>　-->
+        <!--<item>国际组织</item>　　-->
+        <!--<item>其他</item>　-->
+    <!--</string-array>-->
+
+
+    <!--<string name="my_reim_list">我的报销单</string>-->
+    <!--<string name="my_approval_list">我的审批</string>-->
+    <!--<string name="my_approval_detail">审批进度详情</string>-->
+    <!--<string name="add_reim_item">新增报销项</string>-->
+    <!--<string name="submit_reim_doc">报销单</string>-->
+    <!--<string name="budget_category">预算管理（按报销科目划分）</string>-->
+    <!--<string name="budget_depart">预算管理（按部门划分）</string>-->
+    <!--<string name="budget_choose">预算分类</string>-->
+    <!--<string name="edit">编辑</string>-->
+    <!--<string name="department_detail">部门详情</string>-->
+    <!--<string name="department_manage">部门管理</string>-->
+    <!--<string name="members_manage">成员管理</string>-->
+    <!--<string name="new_depart">新建部门</string>-->
+    <!--<string name="edit_depart">编辑部门</string>-->
+    <!--<string name="producer_add">新增审批流程</string>-->
+    <string name="register_company">注册公司</string>
+    <!--<string name="select_date">请选择日期</string>-->
+    <!--<string name="select_loaction">请填写地点</string>-->
+    <!--<string name="select_client">请填写招待客户</string>-->
+    <!--<string name="vehicle_no">请填写车牌号</string>-->
+    <!--<string name="drive_mile">请填写行驶公里数</string>-->
+    <!--<string name="reason">请填写事由</string>-->
+    <!--<string name="reim_date">请选择开票时间</string>-->
+
+    <!--<string name="meal_standard">请填写餐费标准</string>-->
+    <!--<string name="meal_days">请填写天数</string>-->
+    <!--<string name="producer_manager_tilte">审核流程管理</string>-->
+    <!--<string name="add_reim_items">已提交的报销项</string>-->
+    <!--<string name="my_reim_approval_detail">审批详情</string>-->
+
+    <!--<string name="string_applying">正在申请，请稍等...</string>-->
+    <!--<string name="string_issuing">正在签发，请稍等...</string>-->
+
+    <!--<string name="please_input_name">请输入真实姓名</string>-->
+    <!--<string name="app_name_new">财商道</string>-->
+    <!--<string name="reim_money_title">报销金额：</string>-->
+    <!--<string name="rmb_symbol">￥</string>-->
+    <!--<string name="feedback_pictures">图片（选填、提供问题截图）</string>-->
+    <!--<string name="feedback_tel_hint">选填，便于我们与你联系</string>-->
+
+    <!--<string name="title_help">使用帮助</string>-->
+
+
+    <!--商会通-->
+    <string name="config_auth">配置权限</string>
+    <string name="modify_auth">修改权限</string>
+    <string name="modify_enterprise">修改企业信息</string>
+    <string name="cai">财商道</string>
+
+    <string name="commerce">商会通</string>
+    <string name="commerce_manage">商会管理</string>
+    <string name="not_use">暂不可用</string>
+
+    <string name="modify_company_info">修改企业基本资料</string>
+    <string name="company_introduce">公司简介</string>
+    <string name="company_website">公司官网</string>
+    <string name="company_product">主营产品</string>
+    <string name="contact">联系人</string>
+    <string name="contact_way">联系方式</string>
+    <string name="add_vedio">添加视频</string>
+
+    <string name="add_pic">添加照片</string>
+    <string name="other_modify">其他修正项</string>
+    <string name="company_name">公司名称</string>
+    <string name="company_nature">公司性质</string>
+
+    <string name="company_vat_way">增值税征收方式</string>
+    <string name="company_income_way">所得税征收方式</string>
+    <string name="company_tax_id">税号</string>
+    <string name="company_bank">开户银行</string>
+    <string name="company_bank_account">银行账号</string>
+    <string name="company_address">公司地址</string>
+    <string name="company_invoice_way">开票方式 </string>
+    <string name="company_legal_name">法人姓名</string>
+    <string name="company_legal_id">法人身份证号</string>
+
+
+    <string name="success">成功</string>
+    <string name="success_upload">上传成功</string>
+    <string name="failed">失败，请重试！</string>
+    <string name="config_success">配置成功</string>
+    <string name="config_failed">配置失败，请重试！</string>
+
+    <string name="excel_data_error">此文件数据不正确！</string>
+
+
+    <string name="authority_target">请选择配置对象</string>
+    <string name="select_position">请选择职位</string>
+    <string name="name_select">请搜索姓名</string>
+    <string name="authority_carousel">查看轮播图片以及对于的文字内容</string>
+    <string name="corporation_exhabition">优秀企业展</string>
+
+    <string name="news">热点新闻</string>
+
+    <string name="learn_each">学习互动</string>
+    <string-array name="config_target">
+        <item>按职位配置</item>
+        <item>按姓名配置</item>
+
+    </string-array>
+    <string name="commerce_introduce">商会介绍</string>
+
+    <string name="invest_center">投融资中心</string>
+    <string name="authority_config">配置修改权限</string>
+
+
+    <string-array name="country_names">
+
+        <item>Zimbabwe</item>
+
+    </string-array>
+
+
+    <!--&lt;!&ndash;琢税鸟&ndash;&gt;-->
+    <!--<string name="pecker">啄税鸟</string>-->
+    <!--<string name="qa">问答</string>-->
+    <!--<string name="consult_result">咨询结果</string>-->
+    <!--<string name="alarm">预警结果</string>-->
+    <!--<string name="alarm_detial">预警结果详情</string>-->
+    <!--<string name="mine">我的</string>-->
+
+
+    <!--<string name="medical_examination">财税体检</string>-->
+    <!--<string name="expert_advice">专家咨询</string>-->
+    <!--<string name="comprehensive_exam">财税全面体检</string>-->
+    <!--<string name="examination_report">体检报告</string>-->
+
+
+    <!--<string name="learn_financial_report">财税报表学习</string>-->
+    <!--<string name="financial_policy_explanation">财税政策解读</string>-->
+    <!--<string name="custom_made">个性化定制</string>-->
+    <!--<string name="ff">体检报告</string>-->
+    <string name="todo">TODO</string>
+
+    <!--<string name="company_experience_examination">企业体验体检</string>-->
+    <!--<string name="total_interest_start">本年度所有者权益合计期初数</string>-->
+    <!--<string name="total_interest_end">本年度所有者权益合计期末数</string>-->
+
+    <!--<string name="net_profit_current">本年度净利润本期数</string>-->
+    <!--<string name="current_main_business_income">本年度主营业务收入</string>-->
+    <!--<string name="last_main_business_income"> 上年度主营业务收入</string>-->
+
+    <!--<string name="current_main_business_cost">本年度主营业务成本</string>-->
+    <!--<string name="last_main_business_cost"> 上年度主营业务成本</string>-->
+
+    <!--<string name="current_pay_income_tax">本年度应纳所得税额</string>-->
+    <!--<string name="last_pay_income_tax"> 上年度应纳所得税额</string>-->
+
+    <!--<string name="current_import_tax">本月度进项税额</string>-->
+    <!--<string name="last_import_tax"> 上月度进项税额</string>-->
+
+    <!--<string name="current_sale_tax">本月度销项税额</string>-->
+    <!--<string name="last__sale_tax"> 上月度销项税额</string>-->
+
+    <!--<string name="anayze_examination">体检分析</string>-->
+    <!--<string name="assess_income_tax">所得税评估</string>-->
+    <!--<string name="assess_vat">增值税评估</string>-->
+    <!--<string name="assess_stamp">印花税评估</string>-->
+    <!--<string name="assess_income">收入类评估</string>-->
+    <!--<string name="assess_cost">成本类评估</string>-->
+    <!--<string name="assess_fee">费用类评估</string>-->
+    <!--<string name="assess_profit">利润类评估</string>-->
+    <!--<string name="assess_assets">资产类评估</string>-->
+    <!--<string name="analyze_all">全面分析</string>-->
+    <!--<string name="analyze_warning">检测到你的预警分析配置不完全，是否前去配置？</string>-->
+
+    <!--<string name="analyze_params_configration">分析参数配置</string>-->
+    <!--<string name="income_vat_report_data">所得税及增值税申报数据</string>-->
+    <!--<string name="balance_sheet">资产负债表</string>-->
+    <!--<string name="other_data">其他数据</string>-->
+
+    <!--<string name="experience_data">体验数据上传</string>-->
+    <!--<string name="upload_income_tax_application">*请上传四年的年度企业所得税纳税申报表及附表</string>-->
+    <!--<string name="upload__year_income_tax_application">*请上传2019年的年度企业所得税纳税申报表及附表</string>-->
+    <!--<string name="select_year">请选择年份</string>-->
+    <!--<string name="upload">请上传</string>-->
+    <!--<string name="year_income_tax_application">年度企业所得税纳税申报表及附表</string>-->
+    <!--<string name="select_sheet">选择表格</string>-->
+    <!--<string name="unsubmit">未提交</string>-->
+    <!--<string name="required_symbol"><Data><![CDATA[<font color="#ff0000"> *</font><font color="#189dde">请上传</font>]]></Data></string>-->
+    <!--<string name="str_agree_2"><Data><![CDATA[我已阅读，并同意<font color="#ff0000">%3$s</font>]]></Data></string>-->
+
+    <!--<string name="upload_three_vat_sheet">请上传三年的增值税申报表及附表：</string>-->
+
+    <!--<string name="year_vat_sheet">年增值税申报表及附表:</string>-->
+
+    <!--<string name="required_symbol_red"><Data><![CDATA[<font color="#ff0000">%3$s</font><font color="#333333">%3$s</font>]]></Data></string>-->
+    <!--<string name="report_icomplete">您有报表未上传，请检查!</string>-->
+    <!--<string name="year_notice">请先选择年份</string>-->
+    <!--<string name="re_upload">重新上传</string>-->
+    <!--<string name="search">搜索</string>-->
+    <!--<string name="search_finish">搜索完成</string>-->
+    <!--<string name="file_searcher_no_result_found">No result found.</string>-->
+    <!--<string name="file_total">文件共：</string>-->
+
+
+    <!--<string name="input_three_year_assets_number">请输入以前3年年度的期初、期末资产总额</string>-->
+    <!--<string name="begin_of_year_one">一期期初资产总额：</string>-->
+    <!--<string name="begin_of_year_two">二期期初资产总额：</string>-->
+    <!--<string name="begin_of_year_three">三期期初资产总额：</string>-->
+    <!--<string name="end_of_year_one">一期期末资产总额：</string>-->
+    <!--<string name="end_of_year_two">二期期末资产总额：</string>-->
+    <!--<string name="end_of_year_three">三期期末资产总额：</string>-->
+
+    <!--<string name="total_tax_sale">销项税额本年累计：</string>-->
+    <!--<string name="total_tax_import">进项税额本年累计：</string>-->
+    <!--<string name="total_tax_payable">应纳税额合计本年累计：</string>-->
+    <!--<string name="total_tax_sale_by_applicability_rate">按适用率计税销售额本年累计</string>-->
+    <!--<string name="total_tax_sale_by_simple">按简易办法计税销售额本年累计：</string>-->
+    <!--<string name="total_tax_sale_export">免、抵、退办法出口销售额本年累计：</string>-->
+    <!--<string name="total_tax_sale_free">免税销售额本年累计：</string>-->
+    <!--<string name="total_tax_tansport_entry">本年运费进项数额合计：</string>-->
+    <!--<string name="cost_industry_all_city">全市行业收入成本率：</string>-->
+    <!--<string name="main_business_average_fee">全市平均主营业务收入费用率：</string>-->
+
+
+    <!--&lt;!&ndash;预警分析&ndash;&gt;-->
+    <!--<string name="alarming_analyze">预警分析</string>-->
+    <!--<string name="upload_income_tax_annex">请上传企业所得税纳税申报表以及附表</string>-->
+    <!--<string name="upload_vat_annex">请上传增值税纳税申报表</string>-->
+    <!--<string name="upload_assets_balance_sheet">请上传资产负债表</string>-->
+    <!--<string name="upload_profit">请上传利润表</string>-->
+    <!--<string name="before_info">往期信息（可选）</string>-->
+    <!--<string name="before_year">往期年度</string>-->
+    <!--<string name="before_month">往期月度</string>-->
+    <!--<string name="health_notice">恭喜您，企业健康！</string>-->
+
+    <!--<string name="area_good_at">擅长领域:</string>-->
+    <!--<string name="price">价格：</string>-->
+
+
+    <!--<string name="pay_weixin">微信支付</string>-->
+    <!--<string name="consult_problem_title">问题咨询内容</string>-->
+    <!--<string name="input_consult_content">请在输入问题...</string>-->
+    <!--<string name="no_more_data">已没有更多数据</string>-->
+    <!--<string name="load_more">正在加载...</string>-->
+    <!--<string name="load_complete">加载完成</string>-->
+    <!--<string name="no_empty_content">问题不可为空！</string>-->
+    <!--<string name="no_data">暂无数据！</string>-->
+
+    <!--<string name="experts_pictures">图片（问题截图，最多10张）</string>-->
+    <!--<string name="question_answer">问答</string>-->
+
+
+    <!--<string name="upload_income_tax_annex_without_s">请上传企业所得税纳税申报表及附表</string>-->
+
+    <!--<string name="vip_login">VIP登录</string>-->
+    <!--<string name="my_vedio">我的视频</string>-->
+    <!--<string name="my_vedio_detail">视频详情</string>-->
+
+    <!--<string name="expert_certification">专家认证</string>-->
+    <!--<string name="about_pecker">关于啄税鸟</string>-->
+    <!--&lt;!&ndash;<string name="analyze_params_config">分析参数配置</string>&ndash;&gt;-->
+    <!--<string name="tel">手机号</string>-->
+    <!--<string name="psw">密 码</string>-->
+    <!--<string name="visitor_login">游客登入</string>-->
+    <!--<string name="tel_input">请输入手机号</string>-->
+    <!--<string name="psw_input">请输入密码</string>-->
+    <!--<string name="professor_certifi">教授认证</string>-->
+    <!--<string name="select_please">请选择</string>-->
+    <!--<string name="fields_type">行业分类</string>-->
+
+    <!--<string name="no_empty_tel">手机号不可为空！</string>-->
+    <!--<string name="no_empty_psw">密码不可为空！</string>-->
+    <!--<string name="no_select">您有数据没选择！</string>-->
+    <!--<string name="no_empty_name">姓名不可以为空！</string>-->
+    <!--<string name="no_empty_sex">性别不可以为空！</string>-->
+    <!--<string name="no_empty_age">年龄不可以为空!</string>-->
+
+    <!--<string name="no_empty_title">职称不可以为空!</string>-->
+    <!--<string name="no_empty_good">擅长领域不可以为空！</string>-->
+
+    <!--<string name="no_empty_experiment">从业经历不可以为空！</string>-->
+    <!--<string name="no_empty_bank">银行账户不可以为空!</string>-->
+    <!--<string name="no_empty_title_cert_no">职称证书号不可以为空!！</string>-->
+
+    <!--<string name="name">姓名</string>-->
+    <!--<string name="name_input">请输入姓名</string>-->
+
+    <!--<string name="certificate_no">职称证书号</string>-->
+    <!--<string name="certificate_no_input">请输入职称证书号</string>-->
+
+    <!--<string name="age">年龄</string>-->
+    <!--<string name="age_input">请输入年龄</string>-->
+
+    <!--<string name="sex">性别</string>-->
+    <!--<string name="sex_input">请选择性别</string>-->
+
+    <!--<string name="title">职称</string>-->
+    <!--<string name="title_input">请输入职称</string>-->
+
+    <!--<string name="bank_no">银行卡号</string>-->
+    <!--<string name="bank_no_input">请输入银行卡号</string>-->
+
+    <!--<string name="price_consult">咨询单价</string>-->
+    <!--<string name="price_consult_input">请输入咨询单价</string>-->
+
+    <!--<string name="experience">从业经历</string>-->
+    <!--<string name="experience_input">请输入从业经历</string>-->
+
+    <!--<string name="area_good_at_input">请输入擅长领域</string>-->
+    <!--<string name="profit_form">利润表</string>-->
+    <!--<string name="vat_apply_form">增值税申报表</string>-->
+    <!--<string name="income_apply_form">企业所得税申报表</string>-->
+    <!--<string name="company_income_detail_form">一般企业收入明细表</string>-->
+    <!--<string name="company_expenditure_detail_form">一般企业成本支出明细表</string>-->
+
+    <!--<string name="upload_vedio">上传视频</string>-->
+    <!--<string name="video_name">视频标题</string>-->
+    <!--<string name="word_explain">词条解释</string>-->
+    <!--<string name="word_explain_conent">词条解释：无形资产是指企业拥有或控制的没有实物形态的可辨认无形太资产</string>-->
+    <!--<string name="hint_input_video_name">请输入视频标题</string>-->
+    <!--<string name="upload_video_first">请先上传视频！</string>-->
+
+    <!--<string name="consult">税务咨询</string>-->
+    <!--<string name="plan">纳税规划</string>-->
+    <!--<string name="audit">纳税审计</string>-->
+    <!--<string name="agency_accounting">代理记账</string>-->
+
+    <!--<string name="select_custom">请选择多定制内容！</string>-->
+
+    <!--&lt;!&ndash;<string name="address_register">企业注册所在地</string>&ndash;&gt;-->
+    <!--<string name="address_register">企业注册所在地</string>-->
+    <!--<string name="address_manage">企业经营所在地</string>-->
+    <!--<string name="industry_type">行业分类</string>-->
+
+    <!--<string name="apply_sure">确认申请</string>-->
+
+    <!--<string name="no_empty_contact">联系人不可为空！</string>-->
+
+    <!--<string name="no_empty_contact_way">联系方式不可为空！</string>-->
+
+    <!--<string name="no_empty_address_register">公司注册地址不可为空！</string>-->
+
+    <!--<string name="no_empty_address_manage">公司注册地址不可为空！</string>-->
+    <!--<string name="please_select_vat">请选择增值税征收方式</string>-->
+
+    <!--<string name="please_select_nature">请选择公司性质</string>-->
+
+    <!--<string name="please_select_income">请选择所得税征收方式</string>-->
+
+
+    <!--<string name="please_select_industy">请选择行业分类</string>-->
+    <!--<string name="question_append">问题追加</string>-->
+
+    <!--<string name="question_reply">问题回复</string>-->
+
+    <!--<string name="no_alarming_result">暂无预警结果！</string>-->
+    <!--<string name="techonolygy_support">技术支持 南京御安神科技有限公司</string>-->
+    <!--<string name="delete">删除</string>-->
+
+
+    <!--&lt;!&ndash;<string name="professor_certificate">教授认证</string>&ndash;&gt;-->
+
+
+</resources>

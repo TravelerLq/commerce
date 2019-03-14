@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="350"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="320"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_40"
+        android:paddingRight="@dimen/dimen_40"
+        android:paddingBottom="@dimen/dimen_10">
+
+        <RelativeLayout
+            android:id="@+id/rl_reim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_reim"
+                style="@style/home_round"
+                android:src="@drawable/ic_config_auth" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/home_round_title"
+                android:text="@string/config_auth" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_contract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_contract"
+                style="@style/home_round"
+                android:src="@drawable/ic_modify_auth" />
+
+            <TextView
+                android:id="@+id/tv_contract_title"
+                style="@style/home_round_title"
+                android:text="@string/modify_auth" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="320"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_40"
+        android:paddingRight="@dimen/dimen_40"
+        android:paddingBottom="@dimen/dimen_10">
+
+        <RelativeLayout
+            android:id="@+id/rl_invoicing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_invoicing"
+                style="@style/home_round"
+                android:src="@drawable/ic_modify_enterprise" />
+
+            <TextView
+                android:id="@+id/tv_invoicing_title"
+                style="@style/home_round_title"
+                android:text="@string/modify_enterprise" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_budget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_budget"
+                style="@style/home_round"
+                android:src="@drawable/ic_cai_1" />
+
+            <TextView
+                android:id="@+id/tv_budget_title"
+                style="@style/home_round_title"
+                android:text="@string/cai" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="120"
+        android:visibility="visible" />
+</LinearLayout>

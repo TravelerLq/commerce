@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_corporation"
+    style="@style/authority_rl_style"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/tv_authority_name"
+        style="@style/authority_textview_title"
+        android:text="@string/corporation_exhabition" />
+
+    <ImageView
+        android:id="@+id/iv_authority_selector"
+        style="@style/authority_image_select" />
+
+    <com.yuas.commerce.view.ScrollGridView
+        android:id="@+id/grid_parent"
+        style="@style/authority_grid_style"
+        android:layout_below="@+id/tv_authority_name"
+        android:numColumns="2"></com.yuas.commerce.view.ScrollGridView>
+
+</RelativeLayout>

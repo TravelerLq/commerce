@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_10"
+    android:paddingRight="@dimen/dimen_10">
+
+    <include
+        android:id="@+id/includeTitleLayout"
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/other_modify_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/other_modify_textview"
+                    android:text="@string/company_name" />
+
+                <EditText
+                    android:id="@+id/edt_company_name"
+                    style="@style/other_modify_edt"
+                    android:focusable="false" />
+
+            </LinearLayout>
+
+            <!--性质-->
+            <LinearLayout
+                style="@style/other_modify_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/other_modify_textview"
+                    android:text="@string/company_nature" />
+
+                <EditText
+                    android:id="@+id/edt_company_nature"
+                    style="@style/other_modify_edt" />
+
+            </LinearLayout>
+            <!--/增值税征收方式 vat_coll-->
+            <LinearLayout
+                style="@style/other_modify_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/other_modify_textview"
+                    android:text="@string/company_vat_way" />
+
+                <EditText
+                    android:id="@+id/edt_company_vat"
+                    style="@style/other_modify_edt" />
+
+            </LinearLayout>
+
+            <!--所得税征收方式income_tax_coll -->
+            <LinearLayout
+                style="@style/other_modify_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/other_modify_textview"
+                    android:text="@string/company_income_way" />
+
+                <EditText
+                    android:id="@+id/edt_company_income"
+                    style="@style/other_modify_edt" />
+
+            </LinearLayout>
+
+            <!--税号tax_id  -->
+            <LinearLayout
+                style="@style/other_modify_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/other_modify_textview"
+                    android:text="@string/company_tax_id" />
+
+                <EditText
+                    android:id="@+id/edt_company_tax"
+                    style="@style/other_modify_edt" />
+
+            </LinearLayout>
+
+            <!-- 开户银行  -->
+            <LinearLayout
+                style="@style/other_modify_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/other_modify_textview"
+                    android:text="@string/company_bank" />
+
+                <EditText
+                    android:id="@+id/edt_company_bank"
+                    style="@style/other_modify_edt" />
+
+            </LinearLayout>
+
+
+            <!-- 银行账号  -->
+            <LinearLayout
+                style="@style/other_modify_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/other_modify_textview"
+                    android:text="@string/company_bank_account" />
+
+                <EditText
+                    android:id="@+id/edt_company_bank_account"
+                    style="@style/other_modify_edt" />
+
+            </LinearLayout>
+
+
+            <!-- 公司地址  -->
+            <LinearLayout
+                style="@style/other_modify_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/other_modify_textview"
+                    android:text="@string/company_address" />
+
+                <EditText
+                    android:id="@+id/edt_company_address"
+                    style="@style/other_modify_edt" />
+
+            </LinearLayout>
+
+
+            <!-- 开票方式  -->
+            <LinearLayout
+                style="@style/other_modify_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/other_modify_textview"
+                    android:text="@string/company_invoice_way" />
+
+                <EditText
+                    android:id="@+id/edt_company_invoice"
+                    style="@style/other_modify_edt" />
+
+            </LinearLayout>
+
+            <!-- 法人姓名 -->
+            <LinearLayout
+                style="@style/other_modify_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/other_modify_textview"
+                    android:text="@string/company_legal_name" />
+
+                <EditText
+                    android:id="@+id/edt_company_legal_name"
+                    style="@style/other_modify_edt" />
+
+            </LinearLayout>
+
+            <!-- 法人身份证号-->
+            <LinearLayout
+                style="@style/other_modify_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/other_modify_textview"
+                    android:text="@string/company_legal_id" />
+
+                <EditText
+                    android:id="@+id/edt_company_legal_id"
+                    style="@style/other_modify_edt" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_sure"
+        style="@style/btn_sure" />
+</LinearLayout>

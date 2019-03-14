@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f0f0f3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/includeTitleLayout"
+        layout="@layout/activity_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_48" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_90"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_13"
+        android:background="@drawable/bg_regtangle_white_xml"
+
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <!--android:background="@drawable/bg_regtangle_white_xml"-->
+        <ImageView
+            android:id="@+id/project_master_head"
+            android:layout_width="@dimen/dimen_60"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_person_header" />
+        <!--android:background="@drawable/bg_regtangle_grey_707070"-->
+
+        <TextView
+            android:id="@+id/tv_real_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/project_master_head"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/project_master_head"
+            android:text="Jsee" />
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/project_master_head"
+            android:layout_alignStart="@+id/tv_real_name"
+            android:text="15932128935" />
+
+        <TextView
+            android:id="@+id/tv_depart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_real_name"
+            android:layout_alignBottom="@+id/tv_real_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:text="研发部" />
+    </RelativeLayout>
+
+    <!--generete share code-->
+
+    <LinearLayout
+        android:id="@+id/ll_help"
+        style="@style/user_info_ll_style">
+
+        <ImageView
+            android:id="@+id/iv_about"
+            style="@style/user_info_iv_style"
+            android:src="@drawable/ic_help_new2" />
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用帮助"
+
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_feedback"
+        style="@style/user_info_ll_style">
+
+        <ImageView
+            android:id="@+id/iv_problem"
+            style="@style/user_info_iv_style"
+            android:src="@drawable/ic_problem_back_new" />
+
+        <TextView
+            android:id="@+id/textVw30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问题反馈"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_version"
+        style="@style/user_info_ll_style">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            style="@style/user_info_iv_style"
+            android:src="@drawable/ic_version_new" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="版本信息"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!--cert-->
+    <LinearLayout
+        android:id="@+id/ll_cert_info"
+        android:visibility="gone"
+        style="@style/user_info_ll_style">
+
+        <ImageView
+            style="@style/user_info_iv_style"
+            android:src="@drawable/ic_id_new" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="证书信息"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!--小程序-->
+    <LinearLayout
+        android:id="@+id/ll_mini_program"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_id" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="相关小程序"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_neek" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关于我们"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!--注销-->
+    <LinearLayout
+        android:id="@+id/ll_log_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_expense_type" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="注销"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen_50"
+        android:layout_marginRight="@dimen/dimen_50"
+        android:background="@drawable/logint_btn_xml"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:gravity="center"
+        android:text="@string/login_out"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
