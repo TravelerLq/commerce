@@ -195,14 +195,14 @@ public class ModifyEnterpriseInfoActivity extends BaseActivity implements Upload
             case R.id.tv_add_vedio:
                 showDialog("本地视频", "拍摄");
                 break;
-//            case R.id.tv_select_company:
-//                //tvSelectOne  本地视频
-//                selectVedioFromLocal();
-//                break;
-//            case R.id.tv_register_company:
-//                //tvSelectTwo 拍摄
-//                recording();
-//                break;
+            case R.id.tv_select_company:
+                //tvSelectOne  本地视频
+                selectVedioFromLocal();
+                break;
+            case R.id.tv_register_company:
+                //tvSelectTwo 拍摄
+                recording();
+                break;
 
             case R.id.tv_other_modify:
 //                toActivity(OtherModifyInfoActivity.class);

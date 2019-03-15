@@ -8,10 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-
 import com.yuas.commerce.R;
 import com.yuas.commerce.activity.AuthorityConfigActivity;
-import com.yuas.commerce.activity.LoginCommerceActivity;
 import com.yuas.commerce.activity.ModifyEnterpriseInfoActivity;
 import com.yuas.commerce.bean.UserBean;
 import com.yuas.commerce.data.UserData;
@@ -98,7 +96,7 @@ public class HomeCommerceFragment extends BaseFragment implements View.OnClickLi
                // SimpleToast.toastMessage("系统建设中...", Toast.LENGTH_SHORT);
                 break;
             case R.id.rl_budget:
-                toActivity(HomeCommerceFragment.this, LoginCommerceActivity.class);
+               // toActivity(HomeCommerceFragment.this, LoginCommerceActivity.class);
 
 //                //   toActivity(HomeFragment.this,ReimAddTypeActivity.class);
 //                if (roleType.equals("1")) {

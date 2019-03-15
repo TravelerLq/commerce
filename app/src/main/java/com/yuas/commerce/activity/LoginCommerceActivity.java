@@ -154,6 +154,8 @@ public class LoginCommerceActivity extends BaseActivity {
             public void onNext(LoginCommerceResponseBean responseBean) {
                 super.onNext(responseBean);
 //                Loger.i("===login====" + new Gson().toJson(responseBean));
+              //保存公司id
+                MySpEdit.getInstance().setCommerceCompanyId(responseBean.getCoid());
                 toActivity(CommerceHomeActivity.class);
                 finish();
 
