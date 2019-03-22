@@ -75,6 +75,9 @@ public class HomeCommerceFragment extends BaseFragment implements View.OnClickLi
     }
 
     private void initData() {
+        //glide 解决缓存失效问题，token问题的解决：GlideUrl 类的构造函数接受2中类型的参数；
+        // 一种是url,一种URL对象则返回toString(); 创建
+
     }
 
     @Override
@@ -105,10 +108,19 @@ public class HomeCommerceFragment extends BaseFragment implements View.OnClickLi
 //                    SimpleToast.toastMessage("对不起，您暂无权限查看", Toast.LENGTH_SHORT);
 //                }
 
+
+                decodeFromCache();
+
                 break;
             default:
                 break;
         }
+
+    }
+
+
+    private void decodeFromCache() {
+        //cong cache load source from the source
 
     }
 
